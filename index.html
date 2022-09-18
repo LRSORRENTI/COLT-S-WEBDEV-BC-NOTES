@@ -1,322 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Notes for Colt Steele Web Developer Bootcamp</title>
-</head>
-<body>
-    
-<h1 class="title"><u>Notes for Colt Steele Web Developer Bootcamp</u></h1>
-<h1>Also I will be coming back to this once I'm finished to 
-    organize the notes, for now my primary focus is learning.
-</h1>
-<h1>The goal of this course is to help you learn the tools to get
-    a job in web development!
-</h1>
-<h1>
-    Cirriculum Overview:
-    <ol>
+  </head>
+  <body>
+    <h1 class="title"><u>Notes for Colt Steele Web Developer Bootcamp</u></h1>
+    <h1>
+      Also I will be coming back to this once I'm finished to organize the
+      notes, for now my primary focus is learning.
+    </h1>
+    <h1>
+      The goal of this course is to help you learn the tools to get a job in web
+      development!
+    </h1>
+    <h1>
+      Cirriculum Overview:
+      <ol>
+        <li>How the web works</li>
+        <li>HTML, HTML5, Semantic HTML</li>
+        <li>Accessibility</li>
         <li>
-            How the web works
+          CSS, CSS3 Essentials, Flexbox & Layout, Responsive Designs, CSS
+          frameworks, Bootstrap 4 & 5
         </li>
         <li>
-            HTML, HTML5, Semantic HTML
+          Javascript, JS basics, Modern JS syntax, DOM manipulation, ASYNC JS,
+          AJAX & JSON
         </li>
-        <li>
-            Accessibility
-        </li>
-        <li>
-            CSS, CSS3 Essentials, Flexbox & Layout, Responsive Designs, 
-            CSS frameworks, Bootstrap 4 & 5
-        </li>
-        <li>
-            Javascript, JS basics, Modern JS syntax, DOM manipulation, 
-            ASYNC JS, AJAX & JSON
-        </li>
-        <li>
-            Working with API's 
-        </li>
-        <li>
-            Using the terminal, terminal commands
-        </li>
-        <li>
-            NodeJs & NPM, Express JS
-        </li>
-        <li>
-            Web frameworks, Templating, RESTful API's
-        </li>
-        <li>
-            Databases, Mongo DB
-        </li>
-        <li>
-            Developer mindset
-        </li>
-        <li>
-            Security
-        </li>
-        <li>
-            Deploying
-        </li>
-        <li>
-            Mongo Cloud Atlas
-        </li>
-        <li>
-            Mongoose
-        </li>
-        <li>
-            Schema design, design patterns for js 
-        </li>
-        <li>
-            Authentication & Authorization
-        </li>
-        <li>
-            Cookies and sessions
-        </li>
-        <li>
-            Image upload
-        </li>
-        <li>
-            Geocoding and maps
-        </li>
-    </ol>
+        <li>Working with API's</li>
+        <li>Using the terminal, terminal commands</li>
+        <li>NodeJs & NPM, Express JS</li>
+        <li>Web frameworks, Templating, RESTful API's</li>
+        <li>Databases, Mongo DB</li>
+        <li>Developer mindset</li>
+        <li>Security</li>
+        <li>Deploying</li>
+        <li>Mongo Cloud Atlas</li>
+        <li>Mongoose</li>
+        <li>Schema design, design patterns for js</li>
+        <li>Authentication & Authorization</li>
+        <li>Cookies and sessions</li>
+        <li>Image upload</li>
+        <li>Geocoding and maps</li>
+      </ol>
+    </h1>
 
-</h1>
-
-<h1>
-And a whole lot more, everything in the above list we'll go over in detail.
-</h1>
-<h2>Note to myself here, I was having trouble connecting 
-    git kraken GUI but I think it's working now, commits 
-should be showing up in both kraken and git bash, and they are, just 
-checked with git log, we're good to go
-</h2>
-<h1>
-    What the big takeaways fron the course should be:
+    <h1>
+      And a whole lot more, everything in the above list we'll go over in
+      detail.
+    </h1>
+    <h2>
+      Note to myself here, I was having trouble connecting git kraken GUI but I
+      think it's working now, commits should be showing up in both kraken and
+      git bash, and they are, just checked with git log, we're good to go
+    </h2>
+    <h1>
+      What the big takeaways fron the course should be:
+      <ul>
+        <li>Build fluency with front-end technologies</li>
+        <li>Learning how to learn other languages and frameworks</li>
+        <li>Thinking like an engineer</li>
+        <li>How to get 'unstuck'</li>
+        <li>Building applications from scratch</li>
+        <li></li>
+      </ul>
+    </h1>
+    <h1><u> How the internet works </u></h1>
+    <h2>
+      What is it? "A global network of networks" (it's just a bunch of connected
+      computers)
+    </h2>
+    <h2>
+      The internet uses what's called 'routing', where there are other machines
+      that have the job of connecting users together, and the way individual
+      machines are identified are through IP addresses(internet-protocol), there
+      are even undersea cables that go all over the globe, inside protective
+      casings deep in the pacific, atlantic, indian, even around the horn of
+      Africa
+    </h2>
+    <h2>
+      To summarize the internet is a global network of networks, it's the
+      infrastructure that makes everything from email, file sharing, online
+      gaming, streaming services, and the web as a whole possible
+    </h2>
+    <h1>
+      <u> Intro to the web </u>
+    </h1>
+    <h2>
+      The world wide web is an information system where documents and resources
+      are available over the internet.
+    </h2>
+    <h2>
+      Documents are transferred using HTTP (HYPER-TEXT-TRANSFER-PROTOCOL) The
+      resources are identified by URL (Uniform resource locator)
+    </h2>
+    <h1>HTTP REQUESTS</h1>
     <ul>
-        <li>
-            Build fluency with front-end technologies
-        </li>
-        <li>
-            Learning how to learn other languages and frameworks
-        </li>
-        <li>
-            Thinking like an engineer
-        </li>
-        <li>
-            How to get 'unstuck'
-        </li>
-        <li>
-            Building applications from scratch
-        </li>
-        <li>
-            
-        </li>
-    </ul>
-</h1>
-<h1><U>
-    How the internet works
-    </U>
-</h1>
-<h2>
-    What is it? "A global network of networks" (it's just 
-    a bunch of connected computers)
-</h2>
-<h2>
-    The internet uses what's called 'routing', where there are other machines 
-    that have the job of connecting users together, and the way individual 
-    machines are identified are through IP addresses(internet-protocol), there 
-    are even undersea cables that go all over the globe, inside 
-    protective casings deep in the pacific, atlantic, indian, even around 
-    the horn of Africa
-</h2>
-<h2>
-To summarize the internet is a global network of networks, it's the 
-infrastructure that makes everything from email, file sharing, online gaming, 
-streaming services, and the web as a whole possible
-</h2>
-<h1>
-    <u> 
-        Intro to the web
-    </u>
-</h1>
-<h2>
-    The world wide web is an information system where 
-    documents and resources are available over the internet. 
-</h2>
-<h2>
-    Documents are transferred using HTTP (HYPER-TEXT-TRANSFER-PROTOCOL)
-    The resources are identified by URL (Uniform resource locator)
-</h2>
-<h1>
-    HTTP REQUESTS
-</h1>
-<ul>
-    <li>
-        Foundation of the web 
-    </li>
-    <li>
+      <li>Foundation of the web</li>
+      <li>
         Request -> I would like this info please, Response -> Ok, here you go!
-    </li>
-</ul>
-<h2>So http is a set of rules, a protocol on how the form of 
-    communication should work, there are other protocols 
-    on the internet, there's the TCPIP protocol, and many others
-</h2>
-<h2>
-    There are servers dedicated entirely to the web, they deal with 
-    requests all day long, "server" also refers to the software 
-    running on the computer
-</h2>
-<h2>
-    For example if you go to reddit.com and input a subreddit that doesn't 
-    exist, it's the servers job to say "I don't know what that is", then 
-    sends back an error or a different page displaying that the 
-    subreddit does not exist
-</h2>
-
-<h2>A very common term is client-side, which basically means 
-    the user-side or what you see when you go to yahoo.com or google or 
-    whatever website, you're on the client side, the client is the browser
-</h2>
-
-<h2> And all the stuff that happens on yahoos, or googles side 
-    happens on the server or server-side
-</h2>
-
-<h1>CLIENT</h1>
-<h2>
-    The computer that accesses a server
-</h2>
-<h1>
-    The request/response cycle
-</h1>
-<h2>
-    So what happens when the server responds, what happens?
-
-</h2>
-<h2>Well our web browser chrome, firefox, safari is sending an 
-    http request, it finds it's way eventually to yahoos, googles, 
-    or reddits servers, the servers then respond with a web page, but 
-    there's a lot more detail than just that
-</h2>
-<h2>
-    Reddits servers don't auto-respond with the webpage, it responds with 
-    instructions, or the server response with instructions of code that 
-    my browser understands and then can display. The job of the browser 
-    is to render content/code for me to view on the screen.
-</h2>
-
-<h2>Let's take google for example, if we type 'chickens' into 
-    youtube's search bar, we are sending an HTTP request, which 
-    eventually makes it's way to googles servers, then
-     that server now has the task of figuring out 
-    what I'm asking for based on the request, and in the case 
-    of google, takes a lot of work. But it then builds a webpage, 
-then it responds back with HTML, CSS, and JavaScript, translates 
-and displays our chickens search for us with images, ads, content etc.
-<h1>
-    FRONT-END VS. BACK-END
-</h1>
-
-<h2>
-    So two terms we'll see a lot of are front-end and back-end, so when 
-    we make that HTTP request, there's code that has to run on that 
-    server to make it work. 
-</h2>
-<h2>
-    An example would be like a restaurant, the front end is the menu, and 
-    the back-end is the chef who assembles the correct ingredients for 
-    the meal you request
-</h2>
-<h2>
-    So just remember, the front and back end are connected, the front end 
-    uses HTML, CSS, and JavaScript, and the back-end uses other languages 
-    like Python, C, Java. Lot's of languages could be running the backend.
-</h2>
-
-<h2>
-    In this course we'll be doing both, so you'll get a taste of how 
-    the web works, both on the front-end, and the back-end
-</h2>
-
-<h1>
-    What does HTML, CSS, and JavaScript do?
-</h1>
-
-<h2>
-    The HTML describes the 'what', the things on the page, the 
-    text content and the paragraphs.
-</h2>
-<h2>
-    CSS is the colors and styling of the page, so our webpage 
-    doesn't look like it was made in the early 90's with 
-    just text content and zero styling
-           </h2>
-     <h2>
-    JavaScript, the functionality, the action of the webpage
-</h2>
-
-<h1>HTML: The essentials </h1>
-<h2>Crucial:<ul>
-    <li>
-Paragraph elements
-</li>
-<li>HTML Headings</li>
-<li>HTML Lists</li>
-<li>HTML Anchor tags</li>
-<li>HTML Images</li>
-<li>HTML Boilerplate</li>
-</ul>
-</h2>
-<h2>Important:
-    <ul>
-        <li>
-            Using MDN (Mozilla Developer Network)
-        </li>
-        <li>
-            Important
-        </li>
+      </li>
     </ul>
-</h2>
-<h2>Nice to have:
-    <ul>
-        <li>
-            VSCode formatting on save
-        </li>
-    </ul>
-</h2>
-<h1>
-    Intro to HTML
-</h1>
+    <h2>
+      So http is a set of rules, a protocol on how the form of communication
+      should work, there are other protocols on the internet, there's the TCPIP
+      protocol, and many others
+    </h2>
+    <h2>
+      There are servers dedicated entirely to the web, they deal with requests
+      all day long, "server" also refers to the software running on the computer
+    </h2>
+    <h2>
+      For example if you go to reddit.com and input a subreddit that doesn't
+      exist, it's the servers job to say "I don't know what that is", then sends
+      back an error or a different page displaying that the subreddit does not
+      exist
+    </h2>
 
+    <h2>
+      A very common term is client-side, which basically means the user-side or
+      what you see when you go to yahoo.com or google or whatever website,
+      you're on the client side, the client is the browser
+    </h2>
 
+    <h2>
+      And all the stuff that happens on yahoos, or googles side happens on the
+      server or server-side
+    </h2>
 
+    <h1>CLIENT</h1>
+    <h2>The computer that accesses a server</h2>
+    <h1>The request/response cycle</h1>
+    <h2>So what happens when the server responds, what happens?</h2>
+    <h2>
+      Well our web browser chrome, firefox, safari is sending an http request,
+      it finds it's way eventually to yahoos, googles, or reddits servers, the
+      servers then respond with a web page, but there's a lot more detail than
+      just that
+    </h2>
+    <h2>
+      Reddits servers don't auto-respond with the webpage, it responds with
+      instructions, or the server response with instructions of code that my
+      browser understands and then can display. The job of the browser is to
+      render content/code for me to view on the screen.
+    </h2>
 
+    <h2>
+      Let's take google for example, if we type 'chickens' into youtube's search
+      bar, we are sending an HTTP request, which eventually makes it's way to
+      googles servers, then that server now has the task of figuring out what
+      I'm asking for based on the request, and in the case of google, takes a
+      lot of work. But it then builds a webpage, then it responds back with
+      HTML, CSS, and JavaScript, translates and displays our chickens search for
+      us with images, ads, content etc.
+      <h1>FRONT-END VS. BACK-END</h1>
 
+      <h2>
+        So two terms we'll see a lot of are front-end and back-end, so when we
+        make that HTTP request, there's code that has to run on that server to
+        make it work.
+      </h2>
+      <h2>
+        An example would be like a restaurant, the front end is the menu, and
+        the back-end is the chef who assembles the correct ingredients for the
+        meal you request
+      </h2>
+      <h2>
+        So just remember, the front and back end are connected, the front end
+        uses HTML, CSS, and JavaScript, and the back-end uses other languages
+        like Python, C, Java. Lot's of languages could be running the backend.
+      </h2>
 
+      <h2>
+        In this course we'll be doing both, so you'll get a taste of how the web
+        works, both on the front-end, and the back-end
+      </h2>
 
+      <h1>What does HTML, CSS, and JavaScript do?</h1>
 
+      <h2>
+        The HTML describes the 'what', the things on the page, the text content
+        and the paragraphs.
+      </h2>
+      <h2>
+        CSS is the colors and styling of the page, so our webpage doesn't look
+        like it was made in the early 90's with just text content and zero
+        styling
+      </h2>
+      <h2>JavaScript, the functionality, the action of the webpage</h2>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      <h1>HTML: The essentials</h1>
+      <h2>
+        Crucial:
+        <ul>
+          <li>Paragraph elements</li>
+          <li>HTML Headings</li>
+          <li>HTML Lists</li>
+          <li>HTML Anchor tags</li>
+          <li>HTML Images</li>
+          <li>HTML Boilerplate</li>
+        </ul>
+      </h2>
+      <h2>
+        Important:
+        <ul>
+          <li>Using MDN (Mozilla Developer Network)</li>
+          <li>Important</li>
+        </ul>
+      </h2>
+      <h2>
+        Nice to have:
+        <ul>
+          <li>VSCode formatting on save</li>
+        </ul>
+      </h2>
+      <h1>Intro to HTML</h1>
+    </h2>
+  </body>
+</html>
